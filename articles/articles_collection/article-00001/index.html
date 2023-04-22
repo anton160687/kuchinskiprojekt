@@ -1,0 +1,1283 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@40,200,0,0" />
+        <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+        <!-- Bootstrap JS -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+        <!-- EventForMe CSS -->
+        <link rel="stylesheet" href="../../css/articles.css">
+        <link rel="stylesheet" href="../../../css/styles.css">
+        <link rel="icon" href="../../../img/favicon.png">
+
+        <title>#EventForMe</title>
+    </head>
+
+    <body>
+
+<!--    HEADER      -->
+
+        <header class="navbar navbar-expand-lg bg-light sticky-top py-lg-0">
+            <nav class="container-xxl justify-content-between align-items-center">
+
+                <!--    MENU LEFT SIDE  -->
+
+                <div class="col-3 col-lg-1 d-xl-none">
+                    <button class="btn btn-nav-primary d-xl-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasSidebar" aria-controls="offcanvasSidebar">
+                        <span class="align-middle material-symbols-rounded">search</span>
+                    </button>
+                </div>
+
+                <!--    LOGO    -->
+
+                <div class="col-6 col-sm-4 col-lg-3 col-xl-2">
+                    <a class="navbar-brand d-block ratio my-lg-3" href="#"></a>
+                </div>
+
+
+                <!--    MENU RIGHT SIDE -->
+
+                <div class="col-3 col-lg-5 col-xl-8 d-flex align-items-center justify-content-end">
+                    <form class="input-group d-none d-xl-flex" role="search">
+                        <input class="form-control" type="search" placeholder="поиск" aria-label="Search">
+                        <button class="btn btn-nav-outline-primary" type="search"><span class="align-text-bottom material-symbols-rounded">search</span></button>
+                    </form>
+                    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                        <div class="offcanvas-header">
+                            <h5 class="offcanvas-title" id="offcanvasNavbarLabel"></h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                            <ul class="navbar-nav justify-content-end flex-grow-1">
+                                <li class="nav-item">
+                                    <a class="nav-link" aria-current="page" href="#">Каталог</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link active" href="#">Блог</a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        Инструменты
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">мастер приглашений</a></li>
+                                        <li><a class="dropdown-item" href="#">event-мастер</a></li>
+                                        <li><a class="dropdown-item" href="#">event-сайт</a></li>
+                                        <li>
+                                        <hr class="dropdown-divider">
+                                        </li>
+                                        <li><a class="dropdown-item" href="#">event-план</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Контакты</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <a class="btn btn-nav-primary" href="#"><span class="align-middle material-symbols-rounded">account_circle</span></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                        <span class="align-middle material-symbols-rounded">menu</span>
+                    </button>
+                </div>
+
+            </nav>
+        </header>
+
+<!--    CONTENT    -->
+
+        <div class="container-xxl d-flex">
+
+            <!--    FILTER/SEARCH PANE  -->
+            <!---------------------------->
+
+            <aside class="col-xl-2">
+                <div class="offcanvas-xl offcanvas-start" tabindex="-1" id="offcanvasSidebar" aria-labelledby="offcanvasSidebarLabel">
+                    <div class="offcanvas-header align-items-center">
+                        <form class="input-group d-flex  me-4" role="search">
+                            <input class="form-control" type="search" placeholder="поиск" aria-label="Search">
+                            <button class="btn btn-nav-outline-primary" type="submit"><span class="align-text-bottom material-symbols-rounded">search</span></i></button>
+                        </form>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#offcanvasSidebar" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body flex-column">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 flex-column pe-3">
+                            <h5>категории&nbsp;&mdash; свадьбы</h5>
+                            <li class="nav-item"><a class="nav-link" href="">реальные свадьбы</a></li>
+                            <li class="nav-item"><a class="nav-link active" href="">места для свадьбы</a></li>
+                            <li class="nav-item"><a class="nav-link" href="">стиль и декор</a></li>
+                            <li class="nav-item"><a class="nav-link" aria-current="page" href="">организация свадьбы</a></li>
+                            <li class="nav-item"><a class="nav-link" href="">идеи и советы</a></li>
+                            <li class="nav-item"><a class="nav-link" href="">букеты</a></li>
+                            <li class="nav-item"><a class="nav-link" href="">девичник</a></li>
+                            <li class="nav-item"><a class="nav-link" href="">красота и здоровье</a></li>
+                            <li class="nav-item"><a class="nav-link" href="">стиль подружек невесты</a></li>
+                            <li class="nav-item"><a class="nav-link" href="">мальчишник</a></li>
+                            <li class="nav-item"><a class="nav-link" href="">жених и шаферы</a></li>
+                            <li class="nav-item"><a class="nav-link" href="">свадебный стол</a></li>
+                            <li class="nav-item"><a class="nav-link" href="">фуршет</a></li>
+                            <li class="nav-item"><a class="nav-link" href="">#помолвлен</a></li>
+                            <li class="nav-item"><a class="nav-link" href="">дети на свадьбе</a></li>
+                            <li class="nav-item"><a class="nav-link" href="">кольца</a></li>
+                            <li class="nav-item"><a class="nav-link" href="">путешествия</a></li>
+                            <li class="nav-item"><a class="nav-link" href="">медовый месяц</a></li>
+                            <li class="nav-item"><a class="nav-link" href="">музыка</a></li>
+                            <li class="nav-item"><a class="nav-link" href="">фотосессия</a></li>
+                            <li class="nav-item"><a class="nav-link" href="">свадебные платья</a></li>
+                            <li class="nav-item"><a class="nav-link" href="">костюмы</a></li>
+                            <li class="nav-item"><a class="nav-link" href="">обряды</a></li>
+                            <li class="nav-item"><a class="nav-link" href="">традиции</a></li>
+                            <li class="nav-item"><a class="nav-link" href="">формальности</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </aside>
+
+            <!--    ARTICLE PANE    -->
+            <!------------------------>
+
+            <main class="col p-3">
+
+                <!-- BREADCRUMBS -->
+                
+                <section class="row">
+                    <nav class="" aria-label="breadcrumb">
+                    <ol class="breadcrumb m-0">
+                        <li class="breadcrumb-item"><a href="#">Главная</a></li>
+                        <li class="breadcrumb-item"><a href="#">Блог</a></li>
+                        <li class="breadcrumb-item"><a href="#">Организация свадьбы</a></li>
+                        <li class="breadcrumb-item active fw-normal" aria-current="page">Топ-5 веранд для&nbsp;свадьбы в&nbsp;Москве и&nbsp;Подмосковье</li>
+                    </ol>
+                    </nav>
+                </section>
+
+                <!-- ARTICLE HEADER BLOCK -->
+
+                <section class="row flex-row article-header-section">
+
+                    <!--    ARTICLE    -->
+
+                    <div class="col article-header">
+                        <div class="row small article-header-section-state">
+                            <a href="" class="col-6">Организация свадьбы</a>
+                            <div class="col-6 text-end">
+                                <span class="align-text-top ps-2 fs-4 material-symbols-rounded">visibility</span>
+                                <span class="align-text-top">6253</span>
+                                <span class="align-text-top ps-2 fs-4 material-symbols-rounded">favorite</span>
+                                <span class="align-text-top">53</span>
+                            </div>
+                        </div>
+                        <img src="img/1.1.jpg" class="img-fluid" alt="...">
+                        <div class="small text-end article-header-section-state">Время прочтения 5 минут</div>
+                        <h1 class="display-1">Топ-5 веранд для&nbsp;свадьбы в&nbsp;Москве и&nbsp;Подмосковье</h1>
+                        <div class="small article-header-section-credentials">20 марта 2023 | Автор: Алёна Диденко | Фотографии предоставлены House for Wedding</div>
+
+                        <!--    LEAD    -->
+
+                        <div class="mb-4">
+                            <p class="lead fs-4 lh-sm m-0">Подмосковье с&nbsp;его бескрайними лесами, буйством цветов и&nbsp;живописными озерами&nbsp;&mdash; идеальные декорации для&nbsp;свадьбы под&nbsp;открытым небом. Украшения не&nbsp;потребуются: все уже&nbsp;давно создано самой природой.</br>Мы собрали для&nbsp;вас 5 локаций, которые расположены вблизи Москвы и&nbsp;удобны в&nbsp;логистике. Все варианты надежно укрыты от&nbsp;шума мегаполиса за&nbsp;вереницей деревьев, при&nbsp;этом имеют современное техническое оснащение и&nbsp;гарантируют отличный сервис — поэтому позволят с&nbsp;максимальным комфортом провести церемонию вдали от&nbsp;суеты цивилизации.</p>
+                        </div>
+
+                        <!--    TABLE OF CONTENTS    -->
+
+                        <div class="col-12 col-lg-10 offset-lg-1 d-flex flex-column align-items-center">
+                            <button class="btn btn-nav-outline-primary d-flex flex-row align-items-center justify-content-between d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                                <h5 class="p-0 m-3">Содержание</h5>
+                                <span class="material-symbols-rounded">unfold_more</span>
+                            </button>
+                            <div class="collapse d-lg-block fs-5" id="collapseExample">
+                                <div class="card card-body m-0">
+                                    <ul class="nav flex-column list-group-flush">
+                                        <h5 class="d-none d-lg-inline">Содержание</h5>
+                                        <li class="nav-item">
+                                            <a class="nav-link ps-0" href="#first">Веранда для&nbsp;свадьбы &#171;Дом у озера&#187;</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link ps-0" href="#second">Веранда для&nbsp;свадьбы Ryabina House</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link ps-0" href="#third">Усадьба с&nbsp;белоснежной верандой</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link ps-0" href="#fourth">Английский дом с&nbsp;верандой</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link ps-0" href="#fifth">Старинный особняк с&nbsp;верандой</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>  
+                        </div>
+
+
+                    </div>
+
+                    <!--    PROMOTION   -->
+
+                    <div class="col-lg-2 d-none d-lg-flex flex-column justify-content-between small article-promolink">
+                        <ul class="nav flex-column article-header-promolink">
+                            <li class="nav-item pt-4">
+                                <button class="btn p-0" type="button"><img class="icon-general" src="../../../img/like.svg" class="d-block" alt="..."></button>
+                            </li>
+                            <li class="nav-item pt-4">
+                                <button class="btn p-0" type="button"><img class="icon-general" src="../../../img/bookmark.svg" class="d-block" alt="..."></button>
+                            </li>
+                            <li class="nav-item pt-4">
+                                <button class="btn p-0" type="button"><img class="icon-general" src="../../../img/share.svg" class="d-block" alt="..."></button>
+                            </li>
+                        </ul>
+                        <div class="promolink">
+                            <span>Рекомендуем:<br><a class="" href="#">Свадьба Дмитрия и&nbsp;Анастасии</a></span>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- ARTICLE STANDARD BLOCK 1 -->
+
+                <section class="row flex-row article-std-section">
+                    <a class="anchor" name="first"></a>
+
+                    <!--    ARTICLE -->
+
+                    <div class="col article-std">
+
+                        <h2>Веранда для&nbsp;свадьбы &#171;Дом у&nbsp;озера&#187;</h2>
+                        <div class="row">
+                            <div class="col-4 article-std-top">
+                                <div class="ratio ratio-1x1 w-25">
+                                    <div class="d-flex align-items-center justify-content-center article-std-top-number">
+                                        <h3 class="display-6 m-0">01</h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="col-12">Территория усадьбы находится в&nbsp;20 минутах езды от&nbsp;Зеленограда на&nbsp;границе озера и&nbsp;леса. Локация располагает всем, что необходимо для&nbsp;проведения свадьбы «под&nbsp;ключ»: здесь есть двухэтажный дом с&nbsp;банкетным залом и&nbsp;гостевыми комнатами, а&nbsp;также просторная веранда с&nbsp;различными вариантами рассадки. Если вы хотите провести и&nbsp;утро невесты, и&nbsp;выездную регистрацию, и&nbsp;банкет в&nbsp;одном месте, то&nbsp;«Дом у&nbsp;Озера» поможет это реализовать.</p>
+                        </div>
+
+                        <!--    GALLERY -->
+
+                        <div id="carouselCaptions-gallery-1" class="d-flex justify-content-center carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-inner w-75">
+                                <div class="carousel-item active" data-bs-interval="1000000">
+                                    <img src="img/gallery-1-1.jpg" class="d-block w-100" alt="...">
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <h5>First slide label</h5>
+                                        <p>Some representative placeholder content for the first slide.Some representative placeholder content for the first slide.Some representative placeholder content for the first slide.Some representative placeholder content for the first slide.Some representative placeholder content for the first slide.</p>
+                                    </div>
+                                </div>
+                                <div class="carousel-item" data-bs-interval="1000000">
+                                    <img src="img/gallery-1-2.jpg" class="d-block w-100" alt="...">
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <h5>Second slide label</h5>
+                                        <p>Some representative placeholder content for the second slide.</p>
+                                    </div>
+                                </div>
+                                <div class="carousel-item" data-bs-interval="1000000">
+                                    <img src="img/gallery-1-3.jpg" class="d-block w-100" alt="...">
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <h5>Third slide label</h5>
+                                        <p>Some representative placeholder content for the third slide.</p>
+                                    </div>
+                                </div>
+                                <div class="carousel-item" data-bs-interval="1000000">
+                                    <img src="img/gallery-1-4.jpg" class="d-block w-100" alt="...">
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <h5>Fourth slide label</h5>
+                                        <p>Some representative placeholder content for the fourth slide.</p>
+                                    </div>
+                                </div>
+                                <div class="carousel-item" data-bs-interval="1000000">
+                                    <img src="img/gallery-1-1.jpg" class="d-block w-100" alt="...">
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <h5>Fourth slide label</h5>
+                                        <p>Some representative placeholder content for the fourth slide.</p>
+                                    </div>
+                                </div>
+                                <div class="carousel-item" data-bs-interval="1000000">
+                                    <img src="img/gallery-1-2.jpg" class="d-block w-100" alt="...">
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <h5>Fourth slide label</h5>
+                                        <p>Some representative placeholder content for the fourth slide.</p>
+                                    </div>
+                                </div>
+                                <div class="carousel-item" data-bs-interval="1000000">
+                                    <img src="img/gallery-1-3.jpg" class="d-block w-100" alt="...">
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <h5>Fourth slide label</h5>
+                                        <p>Some representative placeholder content for the fourth slide.</p>
+                                    </div>
+                                </div>
+                                <div class="carousel-item" data-bs-interval="1000000">
+                                    <img src="img/gallery-1-4.jpg" class="d-block w-100" alt="...">
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <h5>Fourth slide label</h5>
+                                        <p>Some representative placeholder content for the fourth slide.</p>
+                                    </div>
+                                </div>
+                                <div class="carousel-item" data-bs-interval="1000000">
+                                    <img src="img/gallery-1-2.jpg" class="d-block w-100" alt="...">
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <h5>Fourth slide label</h5>
+                                        <p>Some representative placeholder content for the fourth slide.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#carouselCaptions-gallery-1" data-bs-slide-to="0" class="slide-button active" aria-current="true" aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="#carouselCaptions-gallery-1" data-bs-slide-to="1" class="slide-button" aria-label="Slide 2"></button>
+                                <button type="button" data-bs-target="#carouselCaptions-gallery-1" data-bs-slide-to="2" class="slide-button" aria-label="Slide 3"></button>
+                                <button type="button" data-bs-target="#carouselCaptions-gallery-1" data-bs-slide-to="3" class="slide-button" aria-label="Slide 4"></button>
+                                <button type="button" data-bs-target="#carouselCaptions-gallery-1" data-bs-slide-to="4" class="slide-button" aria-label="Slide 5"></button>
+                                <button type="button" data-bs-target="#carouselCaptions-gallery-1" data-bs-slide-to="5" class="slide-button" aria-label="Slide 6"></button>
+                                <button type="button" data-bs-target="#carouselCaptions-gallery-1" data-bs-slide-to="6" class="slide-button" aria-label="Slide 7"></button>
+                                <button type="button" data-bs-target="#carouselCaptions-gallery-1" data-bs-slide-to="7" class="slide-button" aria-label="Slide 8"></button>
+                                <button type="button" data-bs-target="#carouselCaptions-gallery-1" data-bs-slide-to="8" class="slide-button" aria-label="Slide 9"></button>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselCaptions-gallery-1" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselCaptions-gallery-1" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+
+                        <p class="">Отдельно стоит отметить большое количество живописных уголков для&nbsp;романтической фотосессии. Помимо ухоженных прогулочных маршрутов, здесь есть оборудованные зоны для&nbsp;памятных кадров: например, белоснежный пирс на&nbsp;берегу озера и&nbsp;декорированные подвесные качели. Кроме того, на&nbsp;территории есть несколько необычных арт-объектов вроде красного ретромопеда, который легко может стать участником креативной свадебной съёмки.</p>
+
+                        <!--    INFOGRAPHICS    -->
+
+                        <div class="row">
+                            <div class="col-12 col-sm-4 d-flex flex-row flex-sm-column article-std-info">
+                                <div class="col-3 offset-1 col-sm-4 offset-sm-4">
+                                    <div class="ratio ratio-1x1">
+                                        <img src="img/article-std-icon-2.svg" class="figure-img img-fluid rounded" alt="...">
+                                    </div>
+                                </div>  
+                                <div class="col-8 col-sm-12 align-self-end">
+                                    <p class="small text-sm-center ms-3 ms-sm-0">4000 рублей на человека</p>
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-4 d-flex flex-row flex-sm-column article-std-info">
+                                <div class="col-3 offset-1 col-sm-4 offset-sm-4">
+                                    <div class="ratio ratio-1x1">
+                                        <img src="img/article-std-icon-1.svg" class="figure-img img-fluid rounded" alt="...">
+                                    </div>
+                                </div>  
+                                <div class="col-8 col-sm-12 align-self-end">
+                                    <p class="small text-sm-center ms-3 ms-sm-0">до 80 гостей</p>
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-4 d-flex flex-row flex-sm-column article-std-info">
+                                <div class="col-3 offset-1 col-sm-4 offset-sm-4">
+                                    <div class="ratio ratio-1x1">
+                                        <img src="img/article-std-icon-1.svg" class="figure-img img-fluid rounded" alt="...">
+                                    </div>
+                                </div>  
+                                <div class="col-8 col-sm-12 align-self-end">
+                                    <p class="small text-sm-center ms-3 ms-sm-0">МО, Солнечногорский район, Алабушево, Горького, 36</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--    PROMOTION    -->
+
+                    <div class="d-none d-lg-flex flex-column justify-content-end col-lg-2 small article-promolink">
+                        <div class="promolink">
+                            <span>Рекомендуем:<br><a class="" href="#">Свадьба Дмитрия и&nbsp;Анастасии</a></span>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- ARTICLE STANDARD BLOCK 2 -->
+
+                <a class="anchor" name="second"></a>
+                <section class="row flex-row article-std-section">
+
+                    <!--    ARTICLE -->
+
+                    <div class="col article-std">
+
+                        <h2>Веранда для&nbsp;свадьбы &#171;Дом у&nbsp;озера&#187;</h2>
+                        <div class="row">
+                            <div class="col-4 article-std-top">
+                                <div class="ratio ratio-1x1 w-25">
+                                    <div class="d-flex align-items-center justify-content-center article-std-top-number">
+                                        <h3 class="display-6 m-0">02</h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="col-12">Территория усадьбы находится в&nbsp;20 минутах езды от&nbsp;Зеленограда на&nbsp;границе озера и&nbsp;леса. Локация располагает всем, что необходимо для&nbsp;проведения свадьбы «под&nbsp;ключ»: здесь есть двухэтажный дом с&nbsp;банкетным залом и&nbsp;гостевыми комнатами, а&nbsp;также просторная веранда с&nbsp;различными вариантами рассадки. Если вы хотите провести и&nbsp;утро невесты, и&nbsp;выездную регистрацию, и&nbsp;банкет в&nbsp;одном месте, то&nbsp;«Дом у&nbsp;Озера» поможет это реализовать.</p>
+                        </div>
+
+                        <!--    GALLERY -->
+
+                        <div id="carouselCaptions-gallery-2" class="d-flex justify-content-center carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-inner w-75">
+                                <div class="carousel-item active" data-bs-interval="1000000">
+                                    <img src="img/gallery-2-1.jpg" class="d-block w-100" alt="...">
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <h5>First slide label</h5>
+                                        <p>Some representative placeholder content for the first slide.Some representative placeholder content for the first slide.Some representative placeholder content for the first slide.Some representative placeholder content for the first slide.Some representative placeholder content for the first slide.</p>
+                                    </div>
+                                </div>
+                                <div class="carousel-item" data-bs-interval="1000000">
+                                    <img src="img/gallery-2-2.jpg" class="d-block w-100" alt="...">
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <h5>Second slide label</h5>
+                                        <p>Some representative placeholder content for the second slide.</p>
+                                    </div>
+                                </div>
+                                <div class="carousel-item" data-bs-interval="1000000">
+                                    <img src="img/gallery-2-3.jpg" class="d-block w-100" alt="...">
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <h5>Third slide label</h5>
+                                        <p>Some representative placeholder content for the third slide.</p>
+                                    </div>
+                                </div>
+                                <div class="carousel-item" data-bs-interval="1000000">
+                                    <img src="img/gallery-2-4.jpg" class="d-block w-100" alt="...">
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <h5>Fourth slide label</h5>
+                                        <p>Some representative placeholder content for the fourth slide.</p>
+                                    </div>
+                                </div>
+<!--
+                                <div class="carousel-item" data-bs-interval="1000000">
+                                    <img src="img/gallery-2-1.jpg" class="d-block w-100" alt="...">
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <h5>Fourth slide label</h5>
+                                        <p>Some representative placeholder content for the fourth slide.</p>
+                                    </div>
+                                </div>
+                                <div class="carousel-item" data-bs-interval="1000000">
+                                    <img src="img/gallery-2-2.jpg" class="d-block w-100" alt="...">
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <h5>Fourth slide label</h5>
+                                        <p>Some representative placeholder content for the fourth slide.</p>
+                                    </div>
+                                </div>
+                                <div class="carousel-item" data-bs-interval="1000000">
+                                    <img src="img/gallery-2-3.jpg" class="d-block w-100" alt="...">
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <h5>Fourth slide label</h5>
+                                        <p>Some representative placeholder content for the fourth slide.</p>
+                                    </div>
+                                </div>
+                                <div class="carousel-item" data-bs-interval="1000000">
+                                    <img src="img/gallery-2-4.jpg" class="d-block w-100" alt="...">
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <h5>Fourth slide label</h5>
+                                        <p>Some representative placeholder content for the fourth slide.</p>
+                                    </div>
+                                </div>
+                                <div class="carousel-item" data-bs-interval="1000000">
+                                    <img src="img/gallery-2-2.jpg" class="d-block w-100" alt="...">
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <h5>Fourth slide label</h5>
+                                        <p>Some representative placeholder content for the fourth slide.</p>
+                                    </div>
+                                </div>
+-->                                
+                            </div>
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#carouselCaptions-gallery-2" data-bs-slide-to="0" class="slide-button active" aria-current="true" aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="#carouselCaptions-gallery-2" data-bs-slide-to="1" class="slide-button" aria-label="Slide 2"></button>
+                                <button type="button" data-bs-target="#carouselCaptions-gallery-2" data-bs-slide-to="2" class="slide-button" aria-label="Slide 3"></button>
+                                <button type="button" data-bs-target="#carouselCaptions-gallery-2" data-bs-slide-to="3" class="slide-button" aria-label="Slide 4"></button>
+<!--
+                                <button type="button" data-bs-target="#carouselCaptions-gallery-2" data-bs-slide-to="4" class="slide-button" aria-label="Slide 5"></button>
+                                <button type="button" data-bs-target="#carouselCaptions-gallery-2" data-bs-slide-to="5" class="slide-button" aria-label="Slide 6"></button>
+                                <button type="button" data-bs-target="#carouselCaptions-gallery-2" data-bs-slide-to="6" class="slide-button" aria-label="Slide 7"></button>
+                                <button type="button" data-bs-target="#carouselCaptions-gallery-2" data-bs-slide-to="7" class="slide-button" aria-label="Slide 8"></button>
+                                <button type="button" data-bs-target="#carouselCaptions-gallery-2" data-bs-slide-to="8" class="slide-button" aria-label="Slide 9"></button>
+-->
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselCaptions-gallery-2" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselCaptions-gallery-2" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+
+                        <p class="">Отдельно стоит отметить большое количество живописных уголков для&nbsp;романтической фотосессии. Помимо ухоженных прогулочных маршрутов, здесь есть оборудованные зоны для&nbsp;памятных кадров: например, белоснежный пирс на&nbsp;берегу озера и&nbsp;декорированные подвесные качели. Кроме того, на&nbsp;территории есть несколько необычных арт-объектов вроде красного ретромопеда, который легко может стать участником креативной свадебной съёмки.</p>
+
+                        <!--    INFOGRAPHICS    -->
+
+                        <div class="row">
+                            <div class="col">
+                                <div class="row justify-content-center">
+                                    <div class="col-4">
+                                        <div class="ratio ratio-1x1">
+                                            <img src="img/article-std-icon-1.svg" class="figure-img img-fluid rounded" alt="...">
+                                        </div>
+                                    </div>  
+                                </div>
+                                <div>
+                                    <p class="small article-std-caption text-center">4000 рублей на человека</p></div>
+                                </div>
+                                <div class="col">
+                                    <div class="row justify-content-center">
+                                        <div class="col-4">
+                                            <div class="ratio ratio-1x1">
+                                                <img src="img/article-std-icon-2.svg" class="figure-img img-fluid rounded" alt="...">
+                                            </div>
+                                        </div>  
+                                    </div>
+                                <div>
+                                    <p class="small article-std-caption text-center">до 80 гостей</p></div>
+                                </div>
+                            <div class="col">
+                                <div class="row justify-content-center">
+                                    <div class="col-4">
+                                        <div class="ratio ratio-1x1">
+                                            <img src="img/article-std-icon-3.svg" class="figure-img img-fluid rounded" alt="...">
+                                        </div>
+                                    </div>  
+                                </div>
+                            <div>
+                                <p class="small article-std-caption text-center">МО, Солнечногорский район, Алабушево, Горького, 36</p></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--    PROMOTION    -->
+
+                    <div class="d-none d-lg-flex flex-column justify-content-end col-lg-2 small article-promolink">
+                        <div class="promolink">
+                            <span>Рекомендуем:<br><a class="" href="#">Свадьба Дмитрия и&nbsp;Анастасии</a></span>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- ARTICLE STANDARD BLOCK 3 -->
+
+                <a class="anchor" name="third"></a>
+                <section class="row flex-row article-std-section">
+
+                    <!--    ARTICLE -->
+
+                    <div class="col article-std">
+
+                        <h2>Усадьба с&nbsp;белоснежной верандой</h2>
+                        <div class="row">
+                            <div class="col-4 article-std-top">
+                                <div class="ratio ratio-1x1 w-25">
+                                    <div class="d-flex align-items-center justify-content-center article-std-top-number">
+                                        <h3 class="display-6 m-0">03</h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="col-12">Территория усадьбы находится в&nbsp;20 минутах езды от&nbsp;Зеленограда на&nbsp;границе озера и&nbsp;леса. Локация располагает всем, что необходимо для&nbsp;проведения свадьбы «под&nbsp;ключ»: здесь есть двухэтажный дом с&nbsp;банкетным залом и&nbsp;гостевыми комнатами, а&nbsp;также просторная веранда с&nbsp;различными вариантами рассадки. Если вы хотите провести и&nbsp;утро невесты, и&nbsp;выездную регистрацию, и&nbsp;банкет в&nbsp;одном месте, то&nbsp;«Дом у&nbsp;Озера» поможет это реализовать.</p>
+                        </div>
+
+                        <!--    GALLERY -->
+
+                        <div id="carouselCaptions-gallery-3" class="d-flex justify-content-center carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-inner w-75">
+                                <div class="carousel-item active" data-bs-interval="1000000">
+                                    <img src="img/gallery-3-1.jpg" class="d-block w-100" alt="Белоснежная веранда зал">
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <h5>First slide label</h5>
+                                        <p>Some representative placeholder content for the first slide.Some representative placeholder content for the first slide.Some representative placeholder content for the first slide.Some representative placeholder content for the first slide.Some representative placeholder content for the first slide.</p>
+                                    </div>
+                                </div>
+                                <div class="carousel-item" data-bs-interval="1000000">
+                                    <img src="img/gallery-3-2.jpg" class="d-block w-100" alt="Белоснежная веранда">
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <h5>Second slide label</h5>
+                                        <p>Some representative placeholder content for the second slide.</p>
+                                    </div>
+                                </div>
+                                <div class="carousel-item" data-bs-interval="1000000">
+                                    <img src="img/gallery-3-3.jpg" class="d-block w-100" alt="Белоснежная веранда комната невесты">
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <h5>Third slide label</h5>
+                                        <p>Some representative placeholder content for the third slide.</p>
+                                    </div>
+                                </div>
+                                <div class="carousel-item" data-bs-interval="1000000">
+                                    <img src="img/gallery-3-4.jpg" class="d-block w-100" alt="Белоснежная веранда выход к воде">
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <h5>Fourth slide label</h5>
+                                        <p>Some representative placeholder content for the fourth slide.</p>
+                                    </div>
+                                </div>
+<!--
+                                <div class="carousel-item" data-bs-interval="1000000">
+                                    <img src="img/gallery-3-1.jpg" class="d-block w-100" alt="...">
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <h5>Fourth slide label</h5>
+                                        <p>Some representative placeholder content for the fourth slide.</p>
+                                    </div>
+                                </div>
+                                <div class="carousel-item" data-bs-interval="1000000">
+                                    <img src="img/gallery-3-2.jpg" class="d-block w-100" alt="...">
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <h5>Fourth slide label</h5>
+                                        <p>Some representative placeholder content for the fourth slide.</p>
+                                    </div>
+                                </div>
+                                <div class="carousel-item" data-bs-interval="1000000">
+                                    <img src="img/gallery-3-3.jpg" class="d-block w-100" alt="...">
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <h5>Fourth slide label</h5>
+                                        <p>Some representative placeholder content for the fourth slide.</p>
+                                    </div>
+                                </div>
+                                <div class="carousel-item" data-bs-interval="1000000">
+                                    <img src="img/gallery-3-4.jpg" class="d-block w-100" alt="...">
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <h5>Fourth slide label</h5>
+                                        <p>Some representative placeholder content for the fourth slide.</p>
+                                    </div>
+                                </div>
+                                <div class="carousel-item" data-bs-interval="1000000">
+                                    <img src="img/gallery-3-2.jpg" class="d-block w-100" alt="...">
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <h5>Fourth slide label</h5>
+                                        <p>Some representative placeholder content for the fourth slide.</p>
+                                    </div>
+                                </div>
+-->
+                            </div>
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#carouselCaptions-gallery-3" data-bs-slide-to="0" class="slide-button active" aria-current="true" aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="#carouselCaptions-gallery-3" data-bs-slide-to="1" class="slide-button" aria-label="Slide 2"></button>
+                                <button type="button" data-bs-target="#carouselCaptions-gallery-3" data-bs-slide-to="2" class="slide-button" aria-label="Slide 3"></button>
+                                <button type="button" data-bs-target="#carouselCaptions-gallery-3" data-bs-slide-to="3" class="slide-button" aria-label="Slide 4"></button>
+<!--
+                                <button type="button" data-bs-target="#carouselCaptions-gallery-3" data-bs-slide-to="4" class="slide-button" aria-label="Slide 5"></button>
+                                <button type="button" data-bs-target="#carouselCaptions-gallery-3" data-bs-slide-to="5" class="slide-button" aria-label="Slide 6"></button>
+                                <button type="button" data-bs-target="#carouselCaptions-gallery-3" data-bs-slide-to="6" class="slide-button" aria-label="Slide 7"></button>
+                                <button type="button" data-bs-target="#carouselCaptions-gallery-3" data-bs-slide-to="7" class="slide-button" aria-label="Slide 8"></button>
+                                <button type="button" data-bs-target="#carouselCaptions-gallery-3" data-bs-slide-to="8" class="slide-button" aria-label="Slide 9"></button>
+-->
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselCaptions-gallery-3" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselCaptions-gallery-3" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+
+                        <p class="">Отдельно стоит отметить большое количество живописных уголков для&nbsp;романтической фотосессии. Помимо ухоженных прогулочных маршрутов, здесь есть оборудованные зоны для&nbsp;памятных кадров: например, белоснежный пирс на&nbsp;берегу озера и&nbsp;декорированные подвесные качели. Кроме того, на&nbsp;территории есть несколько необычных арт-объектов вроде красного ретромопеда, который легко может стать участником креативной свадебной съёмки.</p>
+
+                        <!--    INFOGRAPHICS    -->
+
+                        <div class="row">
+                            <div class="col">
+                                <div class="row justify-content-center">
+                                    <div class="col-4">
+                                        <div class="ratio ratio-1x1">
+                                            <img src="img/article-std-icon-1.svg" class="figure-img img-fluid rounded" alt="...">
+                                        </div>
+                                    </div>  
+                                </div>
+                                <div>
+                                    <p class="small article-std-caption text-center">4000 рублей на человека</p></div>
+                                </div>
+                                <div class="col">
+                                    <div class="row justify-content-center">
+                                        <div class="col-4">
+                                            <div class="ratio ratio-1x1">
+                                                <img src="img/article-std-icon-2.svg" class="figure-img img-fluid rounded" alt="...">
+                                            </div>
+                                        </div>  
+                                    </div>
+                                <div>
+                                    <p class="small article-std-caption text-center">до 80 гостей</p></div>
+                                </div>
+                            <div class="col">
+                                <div class="row justify-content-center">
+                                    <div class="col-4">
+                                        <div class="ratio ratio-1x1">
+                                            <img src="img/article-std-icon-3.svg" class="figure-img img-fluid rounded" alt="...">
+                                        </div>
+                                    </div>  
+                                </div>
+                            <div>
+                                <p class="small article-std-caption text-center">МО, Солнечногорский район, Алабушево, Горького, 36</p></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--    PROMOTION    -->
+
+                    <div class="d-none d-lg-flex flex-column justify-content-end col-lg-2 small article-promolink">
+                        <div class="promolink">
+                            <span>Рекомендуем:<br><a class="" href="#">Свадьба Дмитрия и&nbsp;Анастасии</a></span>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- ARTICLE STANDARD BLOCK 4 -->
+
+                <a class="anchor" name="fourth"></a>
+                <section class="row flex-row article-std-section">
+
+                    <!--    ARTICLE -->
+
+                    <div class="col article-std">
+
+                        <h2>Английский дом с&nbsp;верандой</h2>
+                        <div class="row">
+                            <div class="col-4 article-std-top">
+                                <div class="ratio ratio-1x1 w-25">
+                                    <div class="d-flex align-items-center justify-content-center article-std-top-number">
+                                        <h3 class="display-6 m-0">04</h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="col-12">Территория усадьбы находится в&nbsp;20 минутах езды от&nbsp;Зеленограда на&nbsp;границе озера и&nbsp;леса. Локация располагает всем, что необходимо для&nbsp;проведения свадьбы «под&nbsp;ключ»: здесь есть двухэтажный дом с&nbsp;банкетным залом и&nbsp;гостевыми комнатами, а&nbsp;также просторная веранда с&nbsp;различными вариантами рассадки. Если вы хотите провести и&nbsp;утро невесты, и&nbsp;выездную регистрацию, и&nbsp;банкет в&nbsp;одном месте, то&nbsp;«Дом у&nbsp;Озера» поможет это реализовать.</p>
+                        </div>
+
+                        <!--    GALLERY -->
+
+                        <div id="carouselCaptions-gallery-4" class="d-flex justify-content-center carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-inner w-75">
+                                <div class="carousel-item active" data-bs-interval="1000000">
+                                    <img src="img/gallery-4-1.jpg" class="d-block w-100" alt="Английский дом">
+<!--
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <h5>Second slide label</h5>
+                                        <p>Some representative placeholder content for the second slide.</p>
+                                    </div>
+-->                
+                                </div>
+                                <div class="carousel-item" data-bs-interval="1000000">
+                                    <img src="img/gallery-4-2.jpg" class="d-block w-100" alt="Английский дом веранда">
+<!--
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <h5>Second slide label</h5>
+                                        <p>Some representative placeholder content for the second slide.</p>
+                                    </div>
+-->                
+                                </div>
+                                <div class="carousel-item" data-bs-interval="1000000">
+                                    <img src="img/gallery-4-3.jpg" class="d-block w-100" alt="Английский дом выездная регистрация">
+<!--
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <h5>Second slide label</h5>
+                                        <p>Some representative placeholder content for the second slide.</p>
+                                    </div>
+-->                
+                                </div>
+                                <div class="carousel-item" data-bs-interval="1000000">
+                                    <img src="img/gallery-4-4.jpg" class="d-block w-100" alt="Английский дом мангал">
+<!--
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <h5>Second slide label</h5>
+                                        <p>Some representative placeholder content for the second slide.</p>
+                                    </div>
+-->                
+                                </div>
+<!--
+                                <div class="carousel-item" data-bs-interval="1000000">
+                                    <img src="img/gallery-4-1.jpg" class="d-block w-100" alt="...">
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <h5>Fourth slide label</h5>
+                                        <p>Some representative placeholder content for the fourth slide.</p>
+                                    </div>
+                                </div>
+                                <div class="carousel-item" data-bs-interval="1000000">
+                                    <img src="img/gallery-4-2.jpg" class="d-block w-100" alt="...">
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <h5>Fourth slide label</h5>
+                                        <p>Some representative placeholder content for the fourth slide.</p>
+                                    </div>
+                                </div>
+                                <div class="carousel-item" data-bs-interval="1000000">
+                                    <img src="img/gallery-4-3.jpg" class="d-block w-100" alt="...">
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <h5>Fourth slide label</h5>
+                                        <p>Some representative placeholder content for the fourth slide.</p>
+                                    </div>
+                                </div>
+                                <div class="carousel-item" data-bs-interval="1000000">
+                                    <img src="img/gallery-4-4.jpg" class="d-block w-100" alt="...">
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <h5>Fourth slide label</h5>
+                                        <p>Some representative placeholder content for the fourth slide.</p>
+                                    </div>
+                                </div>
+                                <div class="carousel-item" data-bs-interval="1000000">
+                                    <img src="img/gallery-4-2.jpg" class="d-block w-100" alt="...">
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <h5>Fourth slide label</h5>
+                                        <p>Some representative placeholder content for the fourth slide.</p>
+                                    </div>
+                                </div>
+-->
+                            </div>
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#carouselCaptions-gallery-4" data-bs-slide-to="0" class="slide-button active" aria-current="true" aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="#carouselCaptions-gallery-4" data-bs-slide-to="1" class="slide-button" aria-label="Slide 2"></button>
+                                <button type="button" data-bs-target="#carouselCaptions-gallery-4" data-bs-slide-to="2" class="slide-button" aria-label="Slide 3"></button>
+                                <button type="button" data-bs-target="#carouselCaptions-gallery-4" data-bs-slide-to="3" class="slide-button" aria-label="Slide 4"></button>
+<!--
+                                <button type="button" data-bs-target="#carouselCaptions-gallery-4" data-bs-slide-to="4" class="slide-button" aria-label="Slide 5"></button>
+                                <button type="button" data-bs-target="#carouselCaptions-gallery-4" data-bs-slide-to="5" class="slide-button" aria-label="Slide 6"></button>
+                                <button type="button" data-bs-target="#carouselCaptions-gallery-4" data-bs-slide-to="6" class="slide-button" aria-label="Slide 7"></button>
+                                <button type="button" data-bs-target="#carouselCaptions-gallery-4" data-bs-slide-to="7" class="slide-button" aria-label="Slide 8"></button>
+                                <button type="button" data-bs-target="#carouselCaptions-gallery-4" data-bs-slide-to="8" class="slide-button" aria-label="Slide 9"></button>
+-->
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselCaptions-gallery-4" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselCaptions-gallery-4" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+
+                        <p class="">Отдельно стоит отметить большое количество живописных уголков для&nbsp;романтической фотосессии. Помимо ухоженных прогулочных маршрутов, здесь есть оборудованные зоны для&nbsp;памятных кадров: например, белоснежный пирс на&nbsp;берегу озера и&nbsp;декорированные подвесные качели. Кроме того, на&nbsp;территории есть несколько необычных арт-объектов вроде красного ретромопеда, который легко может стать участником креативной свадебной съёмки.</p>
+
+                        <!--    INFOGRAPHICS    -->
+
+                        <div class="row">
+                            <div class="col">
+                                <div class="row justify-content-center">
+                                    <div class="col-4">
+                                        <div class="ratio ratio-1x1">
+                                            <img src="img/article-std-icon-1.svg" class="figure-img img-fluid rounded" alt="...">
+                                        </div>
+                                    </div>  
+                                </div>
+                                <div>
+                                    <p class="small article-std-caption text-center">4000 рублей на человека</p></div>
+                                </div>
+                                <div class="col">
+                                    <div class="row justify-content-center">
+                                        <div class="col-4">
+                                            <div class="ratio ratio-1x1">
+                                                <img src="img/article-std-icon-2.svg" class="figure-img img-fluid rounded" alt="...">
+                                            </div>
+                                        </div>  
+                                    </div>
+                                <div>
+                                    <p class="small article-std-caption text-center">до 80 гостей</p></div>
+                                </div>
+                            <div class="col">
+                                <div class="row justify-content-center">
+                                    <div class="col-4">
+                                        <div class="ratio ratio-1x1">
+                                            <img src="img/article-std-icon-3.svg" class="figure-img img-fluid rounded" alt="...">
+                                        </div>
+                                    </div>  
+                                </div>
+                            <div>
+                                <p class="small article-std-caption text-center">МО, Солнечногорский район, Алабушево, Горького, 36</p></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--    PROMOTION    -->
+
+                    <div class="d-none d-lg-flex flex-column justify-content-end col-lg-2 small article-promolink">
+                        <div class="promolink">
+                            <span>Рекомендуем:<br><a class="" href="#">Свадьба Дмитрия и&nbsp;Анастасии</a></span>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- ARTICLE STANDARD BLOCK 5 -->
+
+                <a class="anchor" name="fifth"></a>
+                <section class="row flex-row article-std-section">
+
+                    <!--    ARTICLE -->
+
+                    <div class="col article-std">
+
+                        <h2>Старинный особняк с&nbsp;верандой</h2>
+                        <div class="row">
+                            <div class="col-4 article-std-top">
+                                <div class="ratio ratio-1x1 w-25">
+                                    <div class="d-flex align-items-center justify-content-center article-std-top-number">
+                                        <h3 class="display-6 m-0">05</h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="col-12">Территория усадьбы находится в&nbsp;20 минутах езды от&nbsp;Зеленограда на&nbsp;границе озера и&nbsp;леса. Локация располагает всем, что необходимо для&nbsp;проведения свадьбы «под&nbsp;ключ»: здесь есть двухэтажный дом с&nbsp;банкетным залом и&nbsp;гостевыми комнатами, а&nbsp;также просторная веранда с&nbsp;различными вариантами рассадки. Если вы хотите провести и&nbsp;утро невесты, и&nbsp;выездную регистрацию, и&nbsp;банкет в&nbsp;одном месте, то&nbsp;«Дом у&nbsp;Озера» поможет это реализовать.</p>
+                        </div>
+
+                        <!--    GALLERY -->
+
+                        <div id="carouselCaptions-gallery-5" class="d-flex justify-content-center carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-inner w-75">
+                                <div class="carousel-item active" data-bs-interval="1000000">
+                                    <img src="img/gallery-5-1.jpg" class="d-block w-100" alt="Старинный особняк ротонда">
+<!--
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <h5>Second slide label</h5>
+                                        <p>Some representative placeholder content for the second slide.</p>
+                                    </div>
+-->                
+                                </div>
+                                <div class="carousel-item" data-bs-interval="1000000">
+                                    <img src="img/gallery-5-2.jpg" class="d-block w-100" alt="Старинный особняк веранда">
+<!--
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <h5>Second slide label</h5>
+                                        <p>Some representative placeholder content for the second slide.</p>
+                                    </div>
+-->                
+                                </div>
+                                <div class="carousel-item" data-bs-interval="1000000">
+                                    <img src="img/gallery-5-3.jpg" class="d-block w-100" alt="Старинный особняк зал">
+<!--
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <h5>Second slide label</h5>
+                                        <p>Some representative placeholder content for the second slide.</p>
+                                    </div>
+-->                
+                                </div>
+                                <div class="carousel-item" data-bs-interval="1000000">
+                                    <img src="img/gallery-5-4.jpg" class="d-block w-100" alt=" Старинный особняк ночь">
+<!--
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <h5>Second slide label</h5>
+                                        <p>Some representative placeholder content for the second slide.</p>
+                                    </div>
+-->                
+                                </div>
+<!--
+                                <div class="carousel-item" data-bs-interval="1000000">
+                                    <img src="img/gallery-5-1.jpg" class="d-block w-100" alt="...">
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <h5>Fourth slide label</h5>
+                                        <p>Some representative placeholder content for the fourth slide.</p>
+                                    </div>
+                                </div>
+                                <div class="carousel-item" data-bs-interval="1000000">
+                                    <img src="img/gallery-5-2.jpg" class="d-block w-100" alt="...">
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <h5>Fourth slide label</h5>
+                                        <p>Some representative placeholder content for the fourth slide.</p>
+                                    </div>
+                                </div>
+                                <div class="carousel-item" data-bs-interval="1000000">
+                                    <img src="img/gallery-5-3.jpg" class="d-block w-100" alt="...">
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <h5>Fourth slide label</h5>
+                                        <p>Some representative placeholder content for the fourth slide.</p>
+                                    </div>
+                                </div>
+                                <div class="carousel-item" data-bs-interval="1000000">
+                                    <img src="img/gallery-5-4.jpg" class="d-block w-100" alt="...">
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <h5>Fourth slide label</h5>
+                                        <p>Some representative placeholder content for the fourth slide.</p>
+                                    </div>
+                                </div>
+                                <div class="carousel-item" data-bs-interval="1000000">
+                                    <img src="img/gallery-5-2.jpg" class="d-block w-100" alt="...">
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <h5>Fourth slide label</h5>
+                                        <p>Some representative placeholder content for the fourth slide.</p>
+                                    </div>
+                                </div>
+-->
+                            </div>
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#carouselCaptions-gallery-5" data-bs-slide-to="0" class="slide-button active" aria-current="true" aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="#carouselCaptions-gallery-5" data-bs-slide-to="1" class="slide-button" aria-label="Slide 2"></button>
+                                <button type="button" data-bs-target="#carouselCaptions-gallery-5" data-bs-slide-to="2" class="slide-button" aria-label="Slide 3"></button>
+                                <button type="button" data-bs-target="#carouselCaptions-gallery-5" data-bs-slide-to="3" class="slide-button" aria-label="Slide 4"></button>
+<!--
+                                <button type="button" data-bs-target="#carouselCaptions-gallery-5" data-bs-slide-to="4" class="slide-button" aria-label="Slide 5"></button>
+                                <button type="button" data-bs-target="#carouselCaptions-gallery-5" data-bs-slide-to="5" class="slide-button" aria-label="Slide 6"></button>
+                                <button type="button" data-bs-target="#carouselCaptions-gallery-5" data-bs-slide-to="6" class="slide-button" aria-label="Slide 7"></button>
+                                <button type="button" data-bs-target="#carouselCaptions-gallery-5" data-bs-slide-to="7" class="slide-button" aria-label="Slide 8"></button>
+                                <button type="button" data-bs-target="#carouselCaptions-gallery-5" data-bs-slide-to="8" class="slide-button" aria-label="Slide 9"></button>
+-->
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselCaptions-gallery-5" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselCaptions-gallery-5" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+
+                        <p class="">Отдельно стоит отметить большое количество живописных уголков для&nbsp;романтической фотосессии. Помимо ухоженных прогулочных маршрутов, здесь есть оборудованные зоны для&nbsp;памятных кадров: например, белоснежный пирс на&nbsp;берегу озера и&nbsp;декорированные подвесные качели. Кроме того, на&nbsp;территории есть несколько необычных арт-объектов вроде красного ретромопеда, который легко может стать участником креативной свадебной съёмки.</p>
+
+                        <!--    INFOGRAPHICS    -->
+
+                        <div class="row">
+                            <div class="col">
+                                <div class="row justify-content-center">
+                                    <div class="col-4">
+                                        <div class="ratio ratio-1x1">
+                                            <img src="img/article-std-icon-1.svg" class="figure-img img-fluid rounded" alt="...">
+                                        </div>
+                                    </div>  
+                                </div>
+                                <div>
+                                    <p class="small article-std-caption text-center">4000 рублей на человека</p></div>
+                                </div>
+                                <div class="col">
+                                    <div class="row justify-content-center">
+                                        <div class="col-4">
+                                            <div class="ratio ratio-1x1">
+                                                <img src="img/article-std-icon-2.svg" class="figure-img img-fluid rounded" alt="...">
+                                            </div>
+                                        </div>  
+                                    </div>
+                                <div>
+                                    <p class="small article-std-caption text-center">до 80 гостей</p></div>
+                                </div>
+                            <div class="col">
+                                <div class="row justify-content-center">
+                                    <div class="col-4">
+                                        <div class="ratio ratio-1x1">
+                                            <img src="img/article-std-icon-3.svg" class="figure-img img-fluid rounded" alt="...">
+                                        </div>
+                                    </div>  
+                                </div>
+                            <div>
+                                <p class="small article-std-caption text-center">МО, Солнечногорский район, Алабушево, Горького, 36</p></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--    PROMOTION    -->
+
+                    <div class="d-none d-lg-flex flex-column justify-content-end col-lg-2 small article-promolink">
+                        <div class="promolink">
+                            <span>Рекомендуем:<br><a class="" href="#">Свадьба Дмитрия и&nbsp;Анастасии</a></span>
+                        </div>
+                    </div>
+                </section>
+
+
+                
+
+                <!-- ARTICLE FOOTER BLOCK -->
+
+                <section class="row">
+                    <div class="col text-center article-footer">
+                        <div>
+                            <h6>Понравилась наша статья? Жмите</h6>
+                            <button class="btn p-0" type="button"><i class="bi bi-heart-fill fs-1"></i></button>                            
+                        </div>
+                        <div>
+                            <h6>Оцените статью по пятибальной шкале</h6>   
+                            <span class="">
+                                <button class="btn p-0" type="button"><i class="bi bi-star-fill fs-3"></i></button>                            
+                                <button class="btn p-0" type="button"><i class="bi bi-star-fill fs-3"></i></button>                            
+                                <button class="btn p-0" type="button"><i class="bi bi-star-fill fs-3"></i></button>                            
+                                <button class="btn p-0" type="button"><i class="bi bi-star-half fs-3"></i></button>                            
+                                <button class="btn p-0" type="button"><i class="bi bi-star fs-3"></i></button>                            
+                            </span>
+                            <p>3.56 из 5 на основе 213 оценок</p>    
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-2 article-promolink">
+                    </div>
+                </section>
+
+            </main>
+        </div>
+
+        <!--    ADVERTISING-FOOTER  -->
+
+        <section class="container-fluid promo-footer">
+            <div class="container-xxl">
+                <h4>Читайте также</h4>
+                <div class="row justify-content-center">
+                    <div class="col-12 col-sm-6 col-lg-5 col-xl-3 d-flex adv-card-container">
+                        <div class="card">
+                            <img src="../../img/hc7jkx6u0nf0grh1jnryfakz79i30fsf.jpg.webp" class="card-img-top" alt="...">
+                            <div class="card-body d-flex flex-column justify-content-between">
+                                <h6 class="card-title">Свадебные платья Viktor&Rolf Mariage: эффектные наряды из&nbsp;коллекции Fall&nbsp;2022</h6>
+                                <div>
+                                    <p class="card-text">В коллекции 2022&ndash;2023 переплетаются классические мотивы и авангардные решения</p>   
+                                    <a href="#" class="">Читать дальше</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-5 col-xl-3 d-flex adv-card-container">
+                        <div class="card">
+                            <img src="../../img/jv364qswchuan0s3f2bckt2he83lhlcr.jpg.webp" class="card-img-top" alt="...">
+                            <div class="card-body d-flex flex-column justify-content-between">
+                                <h6 class="card-title">Меню на свадьбу: лайф-хаки и&nbsp;секреты</h6>
+                                <div>
+                                    <p class="card-text">Секретами делится банкетный менеджер сети House&nbsp;for&nbsp;Wedding</p>    
+                                    <a href="#" class="">Читать дальше</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-5 col-xl-3 d-flex adv-card-container">
+                        <div class="card">
+                            <img src="../../img/mq6opukqz2m036mozxyd1q74jgz1gahu.jpg.webp" class="card-img-top" alt="...">
+                            <div class="card-body d-flex flex-column justify-content-between">
+                                <h6 class="card-title">Свадьба Дмитрия и&nbsp;Анастасии</h6>
+                                <div>
+                                    <p class="card-text">Свадьба состоялась 25&nbsp;августа в&nbsp;Химках на&nbsp;площадке Wedding House Panorama</p>
+                                    <a href="#" class="">Читать дальше</a>    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-5 col-xl-3 d-flex adv-card-container">
+                        <div class="card">
+                            <img src="../../img/u53575spcobt48x9wwld534qjeb7muoe.jpg.webp" class="card-img-top" alt="...">
+                            <div class="card-body d-flex flex-column justify-content-between">
+                                <h6 class="card-title">11 идей нежных и&nbsp;искренних свадебных клятв</h6>
+                                <div>
+                                    <p class="card-text">Подборка лучших идей от&nbsp;EventForMe</p>    
+                                    <a href="#" class="">Читать дальше</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+        
+                </div>
+            </div>        
+        </section>
+
+        <!--    FOOTER  -->
+
+        <footer class="footer">
+            <section class="container-xxl">
+                <div class="row small">
+                    <div class="col-6 col-md-4 col-lg-2">
+                        <ul class="nav flex-column list-group-flush">
+                            <h6 class="">EventForMe</h6>
+                            <li class="nav-item">
+                                <a class="nav-link ps-0" href="#">Реклама на&nbsp;сайте</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link ps-0" href="#">Условия использования</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link ps-0" href="#">Конфиденциальность</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link ps-0" href="#">Авторские права</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-2">
+                        <ul class="nav flex-column list-group-flush">
+                            <h6 class="">Инструменты</h6>
+                            <li class="nav-item">
+                                <a class="nav-link ps-0" href="#">Мастер приглашений</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link ps-0" href="#">EventСайт</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link ps-0" href="#">EventМастер</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link ps-0" href="#">EventПлан</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-2">
+                        <ul class="nav flex-column list-group-flush">
+                            <h6 class="">Посетитель</h6>
+                            <li class="nav-item">
+                                <a class="nav-link ps-0" href="#">EventПрофиль</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link ps-0" href="#">Подписка</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link ps-0" href="#">Пожаловаться</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-2">
+                        <ul class="nav flex-column list-group-flush">
+                            <h6 class="">Исполнитель</h6>
+                            <li class="nav-item">
+                                <a class="nav-link ps-0" href="#">EventКабинет</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link ps-0" href="#">Каталог</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link ps-0" href="#">Поиск исполнителя</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link ps-0" href="#">Стать исполнителем</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-2">
+                        <ul class="nav flex-column list-group-flush">
+                            <h6 class="">Написать</h6>
+                            <li class="nav-item">
+                                <a class="nav-link ps-0" href="#">Разместить статью</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link ps-0" href="#">Рассказать об&nbsp;эвенте</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-2">
+                        <ul class="nav flex-column list-group-flush">
+                            <h6 class="">Справка</h6>
+                            <li class="nav-item">
+                                <a class="nav-link ps-0" href="#">ЗАГСы Москвы и&nbsp;МО</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link ps-0" href="#">Найти Event</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link ps-0" href="#">Часто задаваемые вопросы</a>
+                            </li>
+                        </ul>
+                    </div>
+        
+                </div>
+            </section>
+
+            <!--    COPYRIGHT   -->
+
+            <section class="container-xxl d-flex flex-row justify-content-between small pb-4 copyright">
+                <ul class="nav align-self-center">
+                    <li class="nav-item pe-4">
+                        <button class="btn p-0" type="button"><i class="bi bi-pinterest fs-2 copiright-link"></i></button>
+                    </li>
+                    <li class="nav-item pe-4">
+                        <button class="btn p-0" type="button"><i class="bi bi-telegram fs-2 copiright-link"></i></button>
+                    </li>
+                    <li class="nav-item pe-4">
+                        <button class="btn p-0" type="button"><i class="bi bi-whatsapp fs-2 copiright-link"></i></button>
+                    </li>
+                </ul>
+            <a class="d-flex align-items-center" href="http://kukraft.com">
+                    <img class="icon-general m-3" src="../../../img/kukraft.svg" class="d-block" alt="...">
+                    <div>
+                        <span>design@graphics by<br>Atelier KuKraft &#0169;2023</span>  
+    
+                    </div>
+                </a>
+            </section>
+        </footer>    
+    </body>
+</html>
