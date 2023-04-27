@@ -1,13 +1,16 @@
 <!--    Hyerarchy:
 
-          ORGANISM  
+          ORGANISM  --can be copypasted to html body  
               |  
-              ORGAN        
+              ORGAN     --can be used for organism creation / can not be copypasted / can contain no molecules        
                     |
-                    MOLECULE        
+                    MOLECULE  --can be added to different organs / can contain no atoms 
                         |  
-                        ATOM        
-                
+                        ATOM    --can be added to appropriate molecule            
+                            |
+                            PARTICLE    --using to bild an atom / minimal standalone object / same for all parents / can contain no quarks
+                                |
+                                QUARK   --can be removed from parent particle in appropriate order / doesn't work outside of atom
 -->
 
 
@@ -37,7 +40,7 @@
 
     <body>
 
-<!--    HEADER      -->
+<!--    HEADER   |  ORGANISM 0   -->
 
         <header class="navbar navbar-expand-lg bg-light sticky-top py-lg-0">
             <nav class="container-xxl justify-content-between align-items-center">
@@ -106,11 +109,11 @@
             </nav>
         </header>
 
-<!--    CONTENT    -->
+<!--    CONTENT   | ORGANISM 1  -->
 
         <div class="container-xxl d-flex">
 
-            <!--    FILTER/SEARCH PANE  -->
+            <!--    FILTER/SEARCH PANE  |   ORGAN 1.1   -->
 
             <aside class="col-xl-2">
                 <div class="offcanvas-xl offcanvas-start" tabindex="-1" id="offcanvasSidebar" aria-labelledby="offcanvasSidebarLabel">
@@ -154,11 +157,11 @@
                 </div>
             </aside>
 
-            <!--    ARTICLE PANE    -->
+            <!--    ARTICLE PANE    |   ORGAN 1.2   -->
 
             <main class="col p-3">
 
-                <!-- BREADCRUMBS -->
+                <!-- BREADCRUMBS    |   MOLECULE 1.1    -->
                 
                 <section class="row">
                     <nav class="" aria-label="breadcrumb">
@@ -171,12 +174,15 @@
                     </nav>
                 </section>
 
-                <!-- ARTICLE HEADER SECTION |   ORGAN 1.1 -->
+                <!-- ARTICLE HEADER SECTION |   MOLECULE 1.2 -->
 
                 <section class="row flex-row article-header-section">
+
+                    <!--    ARTICLE'S HEADER   |  ATOM 1.1  -->
+
                     <div class="col article-header">
 
-                        <!--    ARTICLE HEADER   |  MOLECULE 1.1  -->
+                        <!--    ARTICLE'S HEADER   |  PARTICLE 1.1  -->
 
                         <div class="row small article-header-section-state">
                             <a href="" class="col-6">Организация свадьбы</a>
@@ -186,24 +192,24 @@
                                 <span class="align-text-top ps-2 fs-4 material-symbols-rounded">favorite</span>
                                 <span class="align-text-top">53</span>
                             </div>
-                        </div>    <!--  ATOM 1.1  -->
+                        </div>    <!--  PARTICLE 1.1  -->
 
-                        <img src="img/1.1.jpg" class="img-fluid" alt="...">    <!--  ATOM 1.2  -->
+                        <img src="img/1.1.jpg" class="img-fluid" alt="...">    <!--  PARTICLE 1.2  -->
 
-                        <div class="small text-end article-header-section-state">Время прочтения 5 минут</div>    <!--  ATOM 1.3  -->
+                        <div class="small text-end article-header-section-state">Время прочтения 5 минут</div>    <!--  PARTICLE 1.3  -->
 
-                        <h1 class="display-1">Топ-5 веранд для&nbsp;свадьбы в&nbsp;Москве и&nbsp;Подмосковье</h1>    <!--  ATOM 1.4  -->
+                        <h1 class="display-1">Топ-5 веранд для&nbsp;свадьбы в&nbsp;Москве и&nbsp;Подмосковье</h1>    <!--  PARTICLE 1.4  -->
 
                         <div class="small article-header-section-credentials">20 марта 2023 | Автор: Алёна Диденко | Фотографии предоставлены House for Wedding
-                        </div>    <!--  ATOM 1.5  -->
+                        </div>    <!--  PARTICLE 1.5  -->
 
-                        <!--    LEAD    |   ATOM 1.6    -->
+                        <!--    LEAD    |   PARTICLE 1.6    -->
 
                         <div class="mb-4">
                             <p class="lead fs-4 lh-sm m-0">Подмосковье с&nbsp;его бескрайними лесами, буйством цветов и&nbsp;живописными озерами&nbsp;&mdash; идеальные декорации для&nbsp;свадьбы под&nbsp;открытым небом. Украшения не&nbsp;потребуются: все уже&nbsp;давно создано самой природой.</br>Мы собрали для&nbsp;вас 5 локаций, которые расположены вблизи Москвы и&nbsp;удобны в&nbsp;логистике. Все варианты надежно укрыты от&nbsp;шума мегаполиса за&nbsp;вереницей деревьев, при&nbsp;этом имеют современное техническое оснащение и&nbsp;гарантируют отличный сервис — поэтому позволят с&nbsp;максимальным комфортом провести церемонию вдали от&nbsp;суеты цивилизации.</p>
-                        </div>    <!--  ATOM 1.6  -->
+                        </div>    <!--  PARTICLE 1.6  -->
 
-                        <!--    TABLE OF CONTENTS   |   ATOM 1.7    -->
+                        <!--    TABLE OF CONTENTS   |   PARTICLE 1.7    -->
 
                         <div class="col-12 col-lg-10 offset-lg-1 d-flex flex-column align-items-center">
                             <button class="btn btn-nav-outline-primary d-flex flex-row align-items-center justify-content-between d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
@@ -232,10 +238,9 @@
                                     </ul>
                                 </div>
                             </div>  
-                        </div>  <!--    ATOM 1.7    -->
+                        </div>  <!--    PARTICLE 1.7    -->
 
-
-                    </div>
+                    </div>  <!--   ATOM 1.1  -->
 
                     <!--    PROMOTION   -->
 
@@ -1116,7 +1121,7 @@
             </main>
         </div>
 
-        <!--    ADVERTISING-FOOTER  -->
+<!--    ADVERTISING-FOOTER  |   ORGANISM 2  -->
 
         <section class="container-fluid promo-footer">
             <div class="container-xxl">
@@ -1175,7 +1180,7 @@
             </div>        
         </section>
 
-        <!--    FOOTER  -->
+<!--    FOOTER  |   ORGANISM 3  -->
 
         <footer class="footer">
             <section class="container-xxl">
